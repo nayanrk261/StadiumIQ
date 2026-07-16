@@ -8,7 +8,7 @@ import AuditLogs from './components/AuditLogs';
 import SimulatorControls from './components/SimulatorControls';
 import FanAssistant from './components/FanAssistant';
 
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 const socket = socketIo(BACKEND_URL);
 
 export default function App() {
