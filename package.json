@@ -1,0 +1,16 @@
+{
+  "name": "stadium-iq-root",
+  "version": "1.0.0",
+  "description": "StadiumIQ - GenAI-enabled Smart Stadium Operations Ecosystem for FIFA World Cup 2026",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run start --prefix server\" \"npm run dev --prefix client\"",
+    "server": "npm run start --prefix server",
+    "client": "npm run dev --prefix client",
+    "test": "npm run test --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
